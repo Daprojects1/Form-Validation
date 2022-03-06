@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="main-form" novalidate>
+        <h2>Login Details</h2>
+        <div class="field-set">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter name here" >
+            <p class="msg msg-error1 ">Please, display required field</p>
+            <i class="fa-solid fa-circle-exclamation icon none failed"></i> 
+            <i class="fa-solid fa-circle-check none icon passed"></i>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email here" > 
+            <p class="msg msg-error2 none">Please, display required field</p>
+            <i class="fa-solid fa-circle-exclamation icon none failed"></i> 
+            <i class="fa-solid fa-circle-check none  icon passed"></i>
+            <label for="pass">Password</label>
+            <input type="email" id="pass" placeholder="Enter password here" >
+            <p class="msg msg-error3 none">Please, display required field</p> 
+            <i class="fa-solid fa-circle-exclamation icon none failed"></i> 
+            <i class="fa-solid fa-circle-check none  icon passed"></i>
+            <label for="passCheck">Confirm Password</label>
+            <input type="email" id="pass" placeholder="Confirm password" > 
+            <p class="msg msg-error4 none">Please, display required field</p>
+            <i class="fa-solid fa-circle-exclamation icon none failed"></i> 
+            <i class="fa-solid fa-circle-check none  icon passed"></i>
+            <button type="submit" class="login">Login</button>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
