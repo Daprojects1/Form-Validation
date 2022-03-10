@@ -30,6 +30,10 @@ const FormValidate = () => {
             msgerror.classList.add("displayinl")
             a = false;
         } else {
+            if (item === password2Input && password1Input.value !== password2Input.value) {
+                a = false
+                return;
+            }
             msgerror.innerText=""
             msgerror.classList.remove("displayinl")
         }
@@ -52,7 +56,7 @@ const FormValidate = () => {
             document.querySelector(`.${icon}`).classList.remove("displayinl")
             document.querySelector(`.${icon}a`).classList.add("displayinl")
         }
-        input.addEventListener("input", () => {
+        input.addEventListener("blur", () => {
             if (input.value.trim() !== "") {
                 if (input === password2Input) {
                     if (password1Input.value === password2Input.value) {
